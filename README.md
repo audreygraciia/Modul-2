@@ -1,3 +1,3 @@
 # Modul-2
 
-halo peeps, nama saya audrey kalo dipanggil nengok. nim 041
+saya suka makan
