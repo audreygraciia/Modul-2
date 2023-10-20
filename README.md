@@ -1,4 +1,1 @@
-# Modul-2
-
-halo peeps, nama saya audrey kalo dipanggil nengok. nim 041
-(repo's name changed to Praktikum-Pemrograman-Web)
+# 105221041 - Audrey - situs review - Take Home Task 3.
