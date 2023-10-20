@@ -1,4 +1,4 @@
-# Abouttt
+# isinya prak-pemweb sem-5
 
-halo peeps, nama saya audrey kalo dipanggil nengok. nim 041
+halo peeps! namanya audrey, kalo dipanggil nengok.
 (repo's name changed to Praktikum-Pemrograman-Web)
