@@ -1,0 +1,108 @@
+
+h4{
+    width: 50px;
+
+    margin: 50px auto;
+
+    padding: 5px;
+
+    background-color: skyblue;
+
+    color: steelblue;
+}
+
+h1{
+    color: maroon;
+}
+
+.slogan{
+    color: darkred;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+ul{
+    justify-content:flex-end;
+    display: flex;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: darkgoldenrod;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+
+div{
+
+    width: auto;
+
+
+
+    margin: 50px auto;
+
+    padding: 5px;
+
+
+
+    display: grid;
+
+    grid-template-areas: "header header"
+
+                         "side content"
+
+
+
+                          "footer footer";
+
+    grid-template-columns: 1fr 1.5fr;
+
+    grid-template-rows: 0.5fr 1fr;
+
+}
+
+header{
+
+    font-family: sans-serif;
+
+    padding: 50px;
+
+    background-color: bisque;
+
+    grid-area: header;
+
+}
+
+aside{
+
+    padding: 50px;
+
+    background-color: palevioletred;
+
+    grid-area: side;
+
+}
+
+
+main{
+
+    padding: 50px;
+
+    background-color: pink;
+
+    grid-area: content;
+
+}
+
+footer{
+
+    padding: 10px;
+
+    background-color: floralwhite;
+
+    grid-area: footer;
+
+}
