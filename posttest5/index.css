@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+header{
+    font-family: sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: darkgoldenrod;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+h1{
+    margin-left: 70px;
+    color: maroon;
+}
+
+.spanstyle1{
+    color: darkred;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    color: brown;
+    background-color:blanchedalmond;
+
+    display: flex;
+    align-items: center;
+
+}
+
