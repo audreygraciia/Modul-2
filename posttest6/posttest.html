@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posttest</title>
+    <link rel="stylesheet" href="posttest.css">
+</head>
+<body align="center">
+
+
+<div>
+    <form align="center">
+
+    Makanan: <select id="makanan" oninput="myFunction()">
+                <option value = "Nasi Goreng">Nasi Goreng</option>
+                <option value = "Soto Betawi">Soto Betawi</option>
+                <option value = "Rawon">Rawon</option>
+                <option value = "Dendeng Batokok">Dendeng Batokok</option>
+              </select><br><br>
+    Jumlah: <input type="number" id="jumlah" min="1" 
+                oninput="myFunction()"><br><br>
+    Voucher: <input type="text" id="diskon"
+                oninput="myFunction()"><br><br>
+
+    <input type="submit">
+
+    </form>
+
+    Pesanan: <p id="pesanan"></p>
+    Jumlah: <p id="jumlah1"></p>
+    Harga: <p id="harga"></p>
+    Voucher: <p id="diskon"></p>
+
+    <p id="demo"></p>
+</div>
+
+    <script>
+        function myFunction() {
+            let nama = document.getElementById("makanan").value;
+            // console.log("makanan: ",nama)
+            let jumlah = document.getElementById("jumlah").value;
+            let totalHrga=0;
+
+            if (nama == "Nasi Goreng") {
+                totalHrga = jumlah*20000;
+            }
+            else if (nama == "Rawon") {
+                totalHrga = jumlah*25000;
+            }
+            else if (nama == "Soto Betawi") {
+                totalHrga = jumlah*28000;
+            }
+            else if (nama == "Dendeng Batokok") {
+                totalHrga = jumlah*31000;
+            }
+
+            let kupon = document.getElementById("diskon").value;
+            if (kupon == "ASPRAKLEONGANTENG"){
+            totalHrga = totalHrga - 0.2*totalHrga;
+            } else {
+                document.getElementById("harga").textContent = totalHrga;
+            }
+
+            // console.log("makanan: ",nama)
+            document.getElementById("pesanan").textContent = nama;
+            document.getElementById("jumlah1").textContent = jumlah;
+            document.getElementById("harga").textContent = totalHrga;
+            document.getElementById("demo").innerHTML = kupon;
+        }
+    </script>
+
+</body>
+</html>
